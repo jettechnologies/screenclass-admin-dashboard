@@ -21,7 +21,7 @@ const rowSelection: TableProps<DataType>["rowSelection"] = {
   },
 };
 
-const AntDataTable: React.FC<{ data: any; type: "class" | "subject" }> = ({
+const AntDataTable: React.FC<{ data: unknown; type: "class" | "subject" }> = ({
   data,
   type,
 }) => {

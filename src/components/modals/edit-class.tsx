@@ -9,6 +9,7 @@ interface EditClassProps {
 }
 
 export default function EditClass({ editingRow, type }: EditClassProps) {
+  console.log(editingRow);
   return (
     <div className="">
       <h2 className="text-[1.3rem] font-medium">Edit {type}</h2>

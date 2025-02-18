@@ -34,4 +34,4 @@ export interface Question {
   correctIndex: number;
 }
 
-export type TableData = Record<string, any>;
+export type TableData = Record<string, unknown>;
