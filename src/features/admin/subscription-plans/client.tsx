@@ -12,7 +12,7 @@ export default function Client() {
 
   const onEdit = (record: TableData) => {
     setOpen(true);
-    console.log();
+    console.log(record);
   };
 
   const handleOk = () => {
