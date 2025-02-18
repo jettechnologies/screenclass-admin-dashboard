@@ -25,8 +25,8 @@ export function GuardianActionDropdown({
   children,
   record,
 }: {
-  children: React.ReactNode;
-  record: TableData;
+  children?: React.ReactNode;
+  record?: TableData;
 }) {
   const { setActiveDropDown } = useAppInteractionContext();
   const handleSelect = (e: Event, label: string) => {
@@ -47,7 +47,7 @@ export function GuardianActionDropdown({
             label.label === "Subscription History" ? (
               <DropdownMenuItem key={label.id} asChild>
                 <Link
-                  href={`/subscription-history/${record.user_id}`}
+                  href={`/subscription-history/${record?.user_id}`}
                   className="text-[0.9rem]"
                 >
                   {label.label}
